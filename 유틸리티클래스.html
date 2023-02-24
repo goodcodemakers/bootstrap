@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>부트스트랩 설치</title>
+    <!--부트스트랩 css only -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <style>
+      .box {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background: #ddd;
+        border-color: #333 !important ;
+      }
+      .box2 {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bootstrap 5 Test</h1>
+    <div class="container">
+      <h1>유틸리티클래스</h1>
+      <h2>border style</h2>
+      <span class="box border">border</span>
+      <h2>선을 제거 : border-[방향]-0</h2>
+      <span class="box border">border</span>
+      <span class="box border-0">border 0 선 다뺌</span>
+      <span class="box border border-top-0">border top 뻄</span>
+      <span class="box border border-bottom-0">border bottom 뻄</span>
+      <span class="box border border-start-0">border 왼쪽 뻄</span>
+      <span class="box border border-end-0">border 오른쪽 뻄</span>
+      <hr />
+      <h2>특정방향으로 선을 추가</h2>
+      <span class="box border-top">top에만 선 그림</span>
+      <span class="box border-bottom">bottom에만 선 그림</span>
+      <span class="box border-start">왼쪽에만 선 그림</span>
+      <span class="box border-end">오른쪽에만 선 그림</span>
+
+      <h2>선 두께 : 1 ~ 5 단계</h2>
+      <!-- border-[숫자] -->
+
+      <span class="box border border-1">border 두께 1</span
+      ><span class="box border border-2">border 두께 2</span
+      ><span class="box border border-3">border 두께 3</span
+      ><span class="box border border-4">border 두께 4</span
+      ><span class="box border border-5">border 두께 5</span>
+      <br />
+      <br />
+      <h2>선 색상 : border-[색상명]</h2>
+      <span class="box2 border border-primary border-3"></span>
+      <span class="box2 border border-danger border-3"></span>
+      <span class="box2 border border-success border-3"></span>
+
+      <h2>곡선효과</h2>
+      <span class="box2 rounded-1">곡선-1</span>
+      <span class="box2 rounded-2">곡선-2</span>
+      <span class="box2 rounded-3">곡선-3</span>
+      <span class="box2 rounded-4">곡선-4</span>
+      <span class="box2 rounded-5">곡선-5</span>
+      <span class="box2 rounded-circle">동그라미</span>
+      <span class="box2 rounded-pill bg-success" style="width: 200px"
+        >알약</span
+      >
+    </div>
+
+    <div class="container">
+      <h2>float & clear</h2>
+      <div class="layout clearfix">
+        <div class="box float-start">box1</div>
+        <div class="box float-end">box2</div>
+      </div>
+      <p class="bg-danger">밑에 있는 박스 해결 해주세요</p>
+    </div>
+
+    <div class="container border">
+      <h1 class="headling-2">박스 중앙정렬</h1>
+      <div class="mx-auto bg-danger" style="width: 100px">box</div>
+
+      <h2>너비</h2>
+      <p class="bg-warning w-25">25%</p>
+      <p class="bg-warning w-50">50%</p>
+      <p class="bg-warning w-75">75%</p>
+      <p class="bg-warning w-100">100%</p>
+      <p class="bg-warning w-auto">auto%</p>
+
+      <br /><br />
+      <h2>여백</h2>
+      <!-- M:마진 P: 패딩 
+       t| B |S | E 방향 
+       예) mt: margin-top, pt: padding-top 
+       단계 : 1~5 
+        예 mt-1 pt-2
+     -->
+      <div class="bg-warning p-2">패딩2</div>
+      <div class="bg-primary m-2">전체 2마진</div>
+      <div class="bg-danger ms-5">왼쪽 5마진</div>
+    </div>
+    <!-- 부트스트랩 35 -->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
